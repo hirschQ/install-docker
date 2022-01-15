@@ -1,0 +1,11 @@
+##change version
+
+dockerComposeVersion="1.29.2"
+
+url="https://github.com/docker/compose/releases/download/${dockerComposeVersion}/docker-compose-Linux-x86_64"
+
+dockerCompose="/usr/local/bin/docker-compose"
+
+curl -L "${url}" -o "${dockerCompose}"
+
+chmod +x "${dockerCompose}"
